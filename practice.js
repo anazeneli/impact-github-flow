@@ -54,15 +54,6 @@ console.log("successful response? ", successfulResponse(peopleInSpace))
 
 const wheresJoe = (data) => {
   // return "in space!" if Joe Acaba is in space right now. Otherwise, return "dunno."
-   let names = []
-   for(var i=0; i < numberOfAstrosInSpace(peopleInSpace) ; i++)
-   {
-       if("Joe Acaba"  ==  Object.values(data)[1][i]["name"])
-	   return "in space!"	 
-   }
-
-    return "dunno."
-
 }
 console.log("where's Joe? ", wheresJoe(peopleInSpace))
 
